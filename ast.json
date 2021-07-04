@@ -1,0 +1,78 @@
+{
+    "type": "bigquery",
+    "with": [
+        {
+            "name": "A",
+            "stmt": {
+                "tableList": [
+                    "select::null::A"
+                ],
+                "columnList": [
+                    "select::null::n"
+                ],
+                "ast": {
+                    "type": "select",
+                    "as_struct_val": null,
+                    "distinct": null,
+                    "columns": [
+                        {
+                            "expr": {
+                                "type": "number",
+                                "value": 1
+                            },
+                            "as": "n"
+                        }
+                    ],
+                    "from": null,
+                    "for_sys_time_as_of": null,
+                    "where": null,
+                    "groupby": null,
+                    "having": null,
+                    "window": null
+                }
+            }
+        }
+    ],
+    "select": {
+        "type": "select",
+        "as_struct_val": null,
+        "distinct": null,
+        "columns": [
+            {
+                "expr": {
+                    "type": "column_ref",
+                    "table": null,
+                    "column": "n"
+                },
+                "as": null
+            }
+        ],
+        "from": [
+            {
+                "db": null,
+                "table": "A",
+                "as": null
+            }
+        ],
+        "for_sys_time_as_of": null,
+        "where": {
+            "type": "binary_expr",
+            "operator": ">",
+            "left": {
+                "type": "column_ref",
+                "table": null,
+                "column": "n"
+            },
+            "right": {
+                "type": "number",
+                "value": 0
+            }
+        },
+        "groupby": null,
+        "having": null,
+        "window": null
+    },
+    "orderby": null,
+    "limit": null,
+    "parentheses": false
+}

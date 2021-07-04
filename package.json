@@ -1,0 +1,23 @@
+{
+  "name": "sql-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Silver-birder/sql-testing.git"
+  },
+  "keywords": [],
+  "author": "silverbirder <silverbirder@gmail.com> (https://silver-birder.github.io/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Silver-birder/sql-testing/issues"
+  },
+  "homepage": "https://github.com/Silver-birder/sql-testing#readme",
+  "dependencies": {
+    "node-sql-parser": "^3.6.0"
+  }
+}
